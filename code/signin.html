@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="stylesheet" href="mystyle.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign-In</title>
+    <style>
+        form{
+            height: 500px;
+            width: 500px;
+            border: 5px solid white;
+            border-radius: 40px;
+            color: white;
+            text-align: center;
+            font-size: 35px;
+            margin-left: 500px;
+            margin-top: 150px;
+
+            animation: line 5s infinite ease;
+        }
+        @keyframes line {
+            0%{
+                border: 5px solid gold; 
+            }
+            20%{
+                border: 5px solid red;
+            }
+            40%{
+                border: 5px solid green;
+            }
+            60%{
+                border: 5px solid blue;
+            }
+            80%{
+                border: 5px solid blueviolet;
+            }
+            
+        }
+        table{
+            color: white;
+            display: flex;
+            justify-content:center;
+            align-items: center;
+        }
+        input{
+            height: 20px;
+            width: 400px;
+        }
+        .submit{
+            height: 40px;
+            width: 100px;
+            background-color: yellowgreen;
+            font-size: 20px;
+            
+        }
+        .cancel{
+            height: 40px;
+            width: 100px;
+            background-color: yellowgreen;
+            font-size: 20px;
+        }
+        a{
+            text-decoration: none;
+        }
+        div{
+            background-image: radial-gradient(circle,white,black);
+            height: 30px;
+            width: 30px;
+            border-radius: 100%;
+            left: 230px;
+            top: -160px;
+            position: relative;
+            box-shadow: 0px 0px 0px 2px;
+
+            animation: ball 5s infinite ease ;
+        }
+        @keyframes ball {
+            0%{
+                top: -160px;
+                left: 230px;
+                box-shadow: 0px 0px 0px 5px gold;
+            }
+            20%{
+                top:-160px;
+                left: 482px;
+                box-shadow: 0px 0px 0px 5px red;
+            }
+            40%{
+                left: 482px;
+                top: 340px;
+                box-shadow: 0px 0px 0px 5px green;
+            }
+            60%{
+                top: 340px;
+                left: -10px;
+                box-shadow: 0px 0px 0px 5px blue;
+            }
+            80%{
+                left: -10px;
+                top:-160px ;
+                box-shadow: 0px 0px 0px 5px blueviolet;
+            }
+            
+        }
+    </style>
+</head>
+<body>
+    <form action="submit.html">
+        
+        <h2>Sign-In</h2>
+        <table>
+            <div></div>
+           <tr>
+            <td>
+                <input type="text" placeholder="First Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="Last Name">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="text" placeholder="E-mail">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="number" placeholder="Mobile Number">
+            </td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="Submit" class="submit">
+                <input type="reset" value="Clear" class="cancel">
+            </td>
+        </tr>
+        <tr>
+            <td>
+               <a href="login.html">Login-In</a>
+            </td>
+        </tr>
+        
+        </table>
+    </form>
+</body>
+</html>
